@@ -1,0 +1,42 @@
+
+
+{% block body %}
+    
+    {% for project in projects %}
+    <div class="container">
+        <div class="card--project">
+            <h1 id="title">{{project.title}}</h1>
+            <img id="image-project1" src="{{project.image}}"/>
+            <p>{{project.descritpion}}</p>
+        </div>
+    </div>
+    {% endfor %}
+{% endblock %}
+    
+</body>
+</html>
+
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;500;800&display=swap');
+    *{
+        margin: 15px;
+        box-sizing: border-box;
+        
+    }
+
+    .container{
+        width: 400px;
+        text-align: justify;
+        font-family: 'Kanit';
+        display: inline-flex;
+    }
+
+    .card--project{
+    
+    }
+
+    #image-project1{
+        width: 400px;
+    }
+</style>
